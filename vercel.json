@@ -1,0 +1,68 @@
+# 🍵 Oesa Tea — Deployment Guide
+
+Website statis **Oesa Tea** siap di-deploy ke Vercel.
+
+---
+
+## 🚀 Cara Deploy ke Vercel
+
+### Metode 1: Drag & Drop (Paling Mudah)
+1. Buka [vercel.com](https://vercel.com) dan login / daftar akun
+2. Klik **"Add New Project"**
+3. Pilih tab **"Import Third-Party Git"** atau klik **"Deploy without connecting Git"** / gunakan **Vercel CLI**
+4. Alternatif paling mudah: buka [vercel.com/new](https://vercel.com/new), lalu **drag & drop folder `oesa-tea`** langsung ke halaman tersebut
+5. Klik **Deploy** — selesai! ✅
+
+---
+
+### Metode 2: Via GitHub (Recommended untuk update berkala)
+1. Buat repositori baru di [github.com](https://github.com)
+2. Upload isi folder `oesa-tea` ke repo tersebut
+3. Buka [vercel.com](https://vercel.com) → **"Add New Project"** → **"Import Git Repository"**
+4. Pilih repo GitHub yang baru dibuat
+5. Framework Preset: pilih **"Other"** (karena ini static HTML)
+6. Klik **Deploy** ✅
+
+---
+
+### Metode 3: Via Vercel CLI
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Masuk ke folder project
+cd oesa-tea
+
+# Deploy
+vercel
+
+# Ikuti instruksi di terminal
+```
+
+---
+
+## 📁 Struktur File
+```
+oesa-tea/
+├── index.html      ← Halaman utama website
+├── vercel.json     ← Konfigurasi Vercel
+└── README.md       ← Panduan ini
+```
+
+---
+
+## ⚙️ Pengaturan di Vercel Dashboard
+- **Framework Preset**: Other / Static
+- **Root Directory**: `./` (default)
+- **Build Command**: *(kosongkan)*
+- **Output Directory**: `./` (default)
+
+---
+
+## 🌐 Domain Custom (Opsional)
+Setelah deploy berhasil, kamu bisa tambahkan domain custom di:
+`Vercel Dashboard → Project → Settings → Domains`
+
+---
+
+*Oesa Tea — Oemah Sarangan · Segar di Setiap Tegukan 🍵*
